@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_Text"
+        android:backgroundTint="@color/send_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Send message"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Text" />
+
+    <Button
+        android:id="@+id/send_message_TG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_message"
+        android:backgroundTint="@color/send_btn"
+        android:layout_centerHorizontal="true"
+        android:text="Send message in TG" />
+
+    <ImageButton
+        android:id="@+id/btn_rec"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_mic_24"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/send_message_TG"
+        android:background="@color/back"/>
+
+    <EditText
+        android:id="@+id/edit_Subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20px"
+        android:hint="Theme message"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_Subject"
+        android:layout_margin="20px"
+        android:hint="Text message"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:lines="5"
+        android:gravity="top|left"/>
+</RelativeLayout>
+
